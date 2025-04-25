@@ -150,7 +150,7 @@ class Formulario extends StatelessWidget {
           ),
           SizedBox(height: 20),
           TextButton.icon(
-            onPressed: consultarLinha($linha),
+            onPressed: () {} /* consultarLinha($linha)*/,
             style: TextButton.styleFrom(
               backgroundColor: Colors.blueAccent[200],
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),

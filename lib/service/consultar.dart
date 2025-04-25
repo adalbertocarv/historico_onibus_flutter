@@ -16,8 +16,8 @@ class Consultar {
       },
     );
     if (response.statusCode == 200) {
-      final  List<dynamic> data = json.decode(response.body);
-      return LatlongPolyline.fromJsonList(data);
+      final List<dynamic> data = json.decode(response.body);
+      //   return LatlongPolyline.fromJsonList(data);
     } else {
       return Future.error('Ocorreu algum erro');
     }
