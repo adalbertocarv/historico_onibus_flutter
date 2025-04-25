@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       children: [
         // Painel lateral esquerdo
         Container(
-          width: 350,
+          width: 380,
           color: Colors.grey[100],
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,8 +30,20 @@ class HomePage extends StatelessWidget {
                           fontSize: 18,
                           color: Colors.black,
                         ),
-                        child: Text(
-                          'SECRETARIA DE TRANSPORTE E MOBILIDADE',
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text('SECRETARIA DE TRANSPORTE E MOBILIDADE'),
+                            Text(
+                              'SEMOB',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -39,7 +51,7 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(3.5),
                       child: const Image(
                         image: AssetImage('assets/images/logo.png'),
-                        height: 40,
+                        height: 70,
                       ),
                     ),
                   ],

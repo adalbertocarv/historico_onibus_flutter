@@ -1,6 +1,7 @@
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:historico_onibus/service/consultar.dart';
 import 'package:intl/intl.dart';
 
 class Formulario extends StatelessWidget {
@@ -28,14 +29,14 @@ class Formulario extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'linha/Prefixo/Placa do veículo',
                 hintStyle: GoogleFonts.poppins(
-                  color: Colors.grey[500],
+                  color: Colors.grey[600],
                 ),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide.none,
                 ),
                 filled: true,
-                fillColor: Colors.grey[200],
+                fillColor: Colors.grey[300],
                 prefixIcon: Icon(
                   Icons.directions_bus_filled,
                   color: const Color(0xFF448AFF),
@@ -67,7 +68,7 @@ class Formulario extends StatelessWidget {
                   borderSide: BorderSide.none,
                 ),
                 filled: true,
-                fillColor: Colors.grey[200],
+                fillColor: Colors.grey[300],
                 prefixIcon: Icon(
                   Icons.date_range,
                   color: const Color(0xFF448AFF),
@@ -117,7 +118,7 @@ class Formulario extends StatelessWidget {
                   borderSide: BorderSide.none,
                 ),
                 filled: true,
-                fillColor: Colors.grey[200],
+                fillColor: Colors.grey[300],
                 prefixIcon: Icon(
                   Icons.date_range,
                   color: const Color(0xFF448AFF),
@@ -149,13 +150,13 @@ class Formulario extends StatelessWidget {
           ),
           SizedBox(height: 20),
           TextButton.icon(
-            onPressed: () {},
+            onPressed: consultarLinha($linha),
             style: TextButton.styleFrom(
               backgroundColor: Colors.blueAccent[200],
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             ),
             icon: Icon(
-              Icons.loupe_rounded,
+              Icons.loupe,
               color: Colors.white,
             ),
             label: Text(
