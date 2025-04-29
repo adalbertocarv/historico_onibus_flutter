@@ -38,8 +38,8 @@ class HomePage extends StatelessWidget {
                             Text(
                               'SEMOB',
                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.w900,
+                                fontStyle: FontStyle.normal,
                                 fontSize: 12,
                               ),
                             ),
