@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
       //Definindo a lingua para o data picker ser em pt-br
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],
       supportedLocales: const [
